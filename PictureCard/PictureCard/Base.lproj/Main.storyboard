@@ -1,25 +1,172 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--HomeView-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="HomeView" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="gUA-5P-1mT"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lf6-rA-SH9"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="JLA-pL-Ycs">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fzT-hO-9u2">
+                                <rect key="frame" x="0.0" y="512" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Md6-MD-xCR"/>
+                                    <barButtonItem image="slr_camera2-32.png" id="zhA-Pl-bGt">
+                                        <connections>
+                                            <action selector="takePhoto:" destination="BYZ-38-t0r" id="vtV-k6-hOX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="yLL-mF-nUc"/>
+                                </items>
+                            </toolbar>
+                            <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="no-photo.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="B1E-3D-nRL" userLabel="ImageView">
+                                <rect key="frame" x="136" y="111" width="328" height="265"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="328" id="D1U-fV-iYP"/>
+                                    <constraint firstAttribute="height" constant="265" id="WC3-Tu-66q"/>
+                                </constraints>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="110" width="400" height="259"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="B1E-3D-nRL" firstAttribute="leading" secondItem="JLA-pL-Ycs" secondAttribute="leadingMargin" id="GBe-nl-Rt3"/>
+                            <constraint firstItem="Lf6-rA-SH9" firstAttribute="top" secondItem="fzT-hO-9u2" secondAttribute="bottom" id="Ues-LG-Ljv"/>
+                            <constraint firstItem="fzT-hO-9u2" firstAttribute="width" secondItem="JLA-pL-Ycs" secondAttribute="width" id="grK-6f-z9S"/>
+                            <constraint firstItem="B1E-3D-nRL" firstAttribute="top" secondItem="gUA-5P-1mT" secondAttribute="bottom" id="iiS-oM-ImV"/>
+                        </constraints>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="img" destination="B1E-3D-nRL" id="hA3-ug-3FA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="311" y="316"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="us0-ti-vLO">
+            <objects>
+                <viewController id="hIO-Cf-Gfk" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="392-rp-a1H"/>
+                        <viewControllerLayoutGuide type="bottom" id="ivm-Fm-y2o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Od5-a7-hAA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nzo-KC-X2B">
+                                <rect key="frame" x="222" y="233" width="157" height="133"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="133" id="Hvo-oE-hBF"/>
+                                    <constraint firstAttribute="width" constant="157" id="K2a-lI-IM9"/>
+                                </constraints>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="122" y="234" width="157" height="133"/>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ajg-g0-UJg">
+                                <rect key="frame" x="16" y="44" width="146" height="69"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="jtq-Qy-g3R"/>
+                                    <constraint firstAttribute="width" constant="146" id="zEQ-no-m3n"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ueX-RE-XJV">
+                                <rect key="frame" x="233" y="550" width="146" height="42"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.090197819205283913" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="j0v-C3-u59"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diB-rf-Ter">
+                                <rect key="frame" x="101" y="121" width="99" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="slr_camera2-32.png" translatesAutoresizingMaskIntoConstraints="NO" id="U7x-eB-DfP">
+                                <rect key="frame" x="16" y="20" width="568" height="580"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Nzo-KC-X2B" secondAttribute="centerX" constant="-0.5" id="HTy-j4-y5c"/>
+                            <constraint firstItem="diB-rf-Ter" firstAttribute="leading" secondItem="Od5-a7-hAA" secondAttribute="leadingMargin" constant="50" id="JUM-Xe-BlP"/>
+                            <constraint firstItem="ueX-RE-XJV" firstAttribute="leading" secondItem="Od5-a7-hAA" secondAttribute="leadingMargin" id="SNE-8S-8xy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="U7x-eB-DfP" secondAttribute="trailing" id="TDJ-SB-zdN"/>
+                            <constraint firstItem="diB-rf-Ter" firstAttribute="leading" secondItem="Ajg-g0-UJg" secondAttribute="trailing" constant="8" id="gyc-m4-SnZ"/>
+                            <constraint firstItem="U7x-eB-DfP" firstAttribute="top" secondItem="392-rp-a1H" secondAttribute="bottom" id="iUF-UZ-YVm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ueX-RE-XJV" secondAttribute="trailing" id="iZL-va-9pp"/>
+                            <constraint firstItem="diB-rf-Ter" firstAttribute="top" secondItem="Ajg-g0-UJg" secondAttribute="bottom" constant="8" id="p7g-l0-ADB"/>
+                            <constraint firstAttribute="centerY" secondItem="Nzo-KC-X2B" secondAttribute="centerY" constant="0.5" id="rwU-Xu-oAU"/>
+                            <constraint firstItem="Ajg-g0-UJg" firstAttribute="leading" secondItem="Od5-a7-hAA" secondAttribute="leadingMargin" id="seh-6x-XR9"/>
+                            <constraint firstItem="ivm-Fm-y2o" firstAttribute="top" secondItem="ueX-RE-XJV" secondAttribute="bottom" id="uI1-qT-jVo"/>
+                            <constraint firstItem="U7x-eB-DfP" firstAttribute="leading" secondItem="Od5-a7-hAA" secondAttribute="leadingMargin" id="vVG-Th-Wcg"/>
+                            <constraint firstItem="ivm-Fm-y2o" firstAttribute="top" secondItem="U7x-eB-DfP" secondAttribute="bottom" id="zVq-fB-pnr"/>
+                            <constraint firstItem="Ajg-g0-UJg" firstAttribute="top" secondItem="392-rp-a1H" secondAttribute="bottom" constant="24" id="zm1-M3-pkU"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="gyc-m4-SnZ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6tb-dE-oWK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jgM-IH-Afb">
+                    <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="aWh-xK-5XU"/>
+                        <constraint firstAttribute="width" constant="400" id="bk5-d6-TXH"/>
+                    </constraints>
+                    <items>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="UtR-r0-SEC"/>
+                        <barButtonItem image="slr_camera2-32.png" id="z9W-4R-xZG">
+                            <connections>
+                                <action selector="takePhoto:" destination="BYZ-38-t0r" id="1JG-2V-wfJ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Sah-Te-XnN"/>
+                    </items>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="bk5-d6-TXH"/>
+                            <exclude reference="aWh-xK-5XU"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                        <rect key="frame" x="0.0" y="512" width="400" height="44"/>
+                        <mask key="constraints">
+                            <include reference="bk5-d6-TXH"/>
+                            <include reference="aWh-xK-5XU"/>
+                        </mask>
+                    </variation>
+                </toolbar>
+            </objects>
+            <point key="canvasLocation" x="325" y="1033"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="no-photo.jpeg" width="564" height="350"/>
+        <image name="slr_camera2-32.png" width="32" height="32"/>
+    </resources>
 </document>

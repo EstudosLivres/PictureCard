@@ -15,6 +15,9 @@
 		B1CF96041A6D1F9200FE4B71 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1CF96031A6D1F9200FE4B71 /* Images.xcassets */; };
 		B1CF96071A6D1F9200FE4B71 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1CF96051A6D1F9200FE4B71 /* LaunchScreen.xib */; };
 		B1CF96131A6D1F9200FE4B71 /* PictureCardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CF96121A6D1F9200FE4B71 /* PictureCardTests.m */; };
+		B1CF961D1A6D279200FE4B71 /* slr_camera2-32.png in Resources */ = {isa = PBXBuildFile; fileRef = B1CF961C1A6D279200FE4B71 /* slr_camera2-32.png */; };
+		B1CF96221A6D7D9500FE4B71 /* no-photo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B1CF96211A6D7D9500FE4B71 /* no-photo.jpeg */; };
+		B1CF96251A6D838B00FE4B71 /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = B1CF96241A6D838B00FE4B71 /* NSString+Hash.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,13 @@
 		B1CF960C1A6D1F9200FE4B71 /* PictureCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PictureCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1CF96111A6D1F9200FE4B71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B1CF96121A6D1F9200FE4B71 /* PictureCardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureCardTests.m; sourceTree = "<group>"; };
+		B1CF961C1A6D279200FE4B71 /* slr_camera2-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "slr_camera2-32.png"; sourceTree = "<group>"; };
+		B1CF961F1A6D4E3900FE4B71 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Main.strings; sourceTree = "<group>"; };
+		B1CF96201A6D4E3900FE4B71 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		B1CF96211A6D7D9500FE4B71 /* no-photo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "no-photo.jpeg"; sourceTree = "<group>"; };
+		B1CF96231A6D838B00FE4B71 /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
+		B1CF96241A6D838B00FE4B71 /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		B1CF96261A6D84E600FE4B71 /* PictureCard.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureCard.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +102,8 @@
 				B1CF96051A6D1F9200FE4B71 /* LaunchScreen.xib */,
 				B1CF95FA1A6D1F9200FE4B71 /* PictureCard.xcdatamodeld */,
 				B1CF95F31A6D1F9200FE4B71 /* Supporting Files */,
+				B1CF96231A6D838B00FE4B71 /* NSString+Hash.h */,
+				B1CF96241A6D838B00FE4B71 /* NSString+Hash.m */,
 			);
 			path = PictureCard;
 			sourceTree = "<group>";
@@ -99,8 +111,10 @@
 		B1CF95F31A6D1F9200FE4B71 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B1CF961E1A6D2C4E00FE4B71 /* images */,
 				B1CF95F41A6D1F9200FE4B71 /* Info.plist */,
 				B1CF95F51A6D1F9200FE4B71 /* main.m */,
+				B1CF96261A6D84E600FE4B71 /* PictureCard.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -120,6 +134,15 @@
 				B1CF96111A6D1F9200FE4B71 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1CF961E1A6D2C4E00FE4B71 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				B1CF96211A6D7D9500FE4B71 /* no-photo.jpeg */,
+				B1CF961C1A6D279200FE4B71 /* slr_camera2-32.png */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,7 +227,9 @@
 			files = (
 				B1CF96021A6D1F9200FE4B71 /* Main.storyboard in Resources */,
 				B1CF96071A6D1F9200FE4B71 /* LaunchScreen.xib in Resources */,
+				B1CF961D1A6D279200FE4B71 /* slr_camera2-32.png in Resources */,
 				B1CF96041A6D1F9200FE4B71 /* Images.xcassets in Resources */,
+				B1CF96221A6D7D9500FE4B71 /* no-photo.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +250,7 @@
 				B1CF95F91A6D1F9200FE4B71 /* AppDelegate.m in Sources */,
 				B1CF95FC1A6D1F9200FE4B71 /* PictureCard.xcdatamodeld in Sources */,
 				B1CF95FF1A6D1F9200FE4B71 /* ViewController.m in Sources */,
+				B1CF96251A6D838B00FE4B71 /* NSString+Hash.m in Sources */,
 				B1CF95F61A6D1F9200FE4B71 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +278,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B1CF96011A6D1F9200FE4B71 /* Base */,
+				B1CF961F1A6D4E3900FE4B71 /* pt */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -260,6 +287,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				B1CF96061A6D1F9200FE4B71 /* Base */,
+				B1CF96201A6D4E3900FE4B71 /* pt */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -290,6 +318,8 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PictureCard/PictureCard.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -301,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -331,13 +361,15 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = PictureCard/PictureCard.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -418,6 +450,7 @@
 				B1CF96181A6D1F9200FE4B71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B1CF96191A6D1F9200FE4B71 /* Build configuration list for PBXNativeTarget "PictureCardTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +459,7 @@
 				B1CF961B1A6D1F9200FE4B71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
